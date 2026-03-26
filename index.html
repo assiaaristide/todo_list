@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ma Liste de Tâches</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>Ma Liste de Tâches</h1>
+      <p>Organise tes tâches simplement</p>
+    </header>
+
+    <section class="todo-input-section">
+      <form id="todo-form" class="todo-form">
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="Ajouter une nouvelle tâche..."
+          autocomplete="off"
+        />
+        <button type="submit">Ajouter</button>
+      </form>
+    </section>
+
+    <section class="todo-stats">
+      <div class="stat-box">
+        <span id="total-tasks">0</span>
+        <small>Total</small>
+      </div>
+      <div class="stat-box">
+        <span id="completed-tasks">0</span>
+        <small>Terminées</small>
+      </div>
+      <div class="stat-box">
+        <span id="remaining-tasks">0</span>
+        <small>Restantes</small>
+      </div>
+    </section>
+
+    <section class="todo-list-section">
+      <ul id="todo-list" class="todo-list"></ul>
+      <p id="empty-message" class="empty-message">Aucune tâche pour le moment.</p>
+    </section>
+
+    <section class="actions">
+      <button id="clear-completed" class="secondary-btn">Supprimer les tâches terminées</button>
+      <button id="clear-all" class="danger-btn">Tout supprimer</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
